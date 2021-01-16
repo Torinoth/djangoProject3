@@ -1,0 +1,11 @@
+version: 3
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+
+volumes:
+  - "./:/var/djangoProject3"
+container_name: djangoProject3
+tty: true
+working_dir: "/var/djangoProject3"
